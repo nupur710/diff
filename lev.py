@@ -86,6 +86,6 @@ else:
     def trace_cache(*args):
         pass
 
-print("str distance by recursive method is ", lev("rkelrjlwjrlwjrl", "flskajflsajfl"))
+#print("str distance by recursive method is ", lev("foo", "bar"))
 print("\n********************************************************************\n")
-print("str dist by non-recursive method is ", lev_impl_back("rkelrjlwjrlwjrl", "flskajflsajfl"))
+print("str dist by non-recursive method is ", lev_impl_back("foo", "bar"))
