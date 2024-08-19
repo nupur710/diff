@@ -57,13 +57,12 @@ def build_diff(a, b, trace):
                 edit_list.append(('+', b[j-1]))
                 j= j-1
 
-        return edit_list
-
-
-    return
+    return reversed(list(edit_list))
 
 
 a= "apple"
 b= "dapple"
 
-print(myers_diff(a,b))
+result= myers_diff(a,b)
+for op, char in result:
+    print(f"{op}{char}", end=" ")
